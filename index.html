@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO UTAMA - AGAR MUNCUL DI GOOGLE -->
+    <title>Jasa Driver Profesional Pati - Siap 24 Jam Dalam & Luar Kota</title>
+    <meta name="description" content="Butuh supir panggilan terpercaya di Pati? Jasa Driver Pati melayani antar jemput lokal dan antar kota. Profesional, aman, dan standby 24 jam. Hubungi 082213197349.">
+    <meta name="keywords" content="jasa driver pati, supir panggilan pati, sewa supir pati, driver profesional pati, driver luar kota, supir bandara pati, harga sewa supir pati">
+    <meta name="author" content="Driver Pati">
+    
+    <!-- Meta Tag Verifikasi Google (Nanti kodenya diganti dari Search Console) -->
+    <meta name="google-site-verification" content="KODE_VERIFIKASI_KAMU_DI_SINI" />
+
+    <!-- Open Graph (Bagus saat share ke WA) -->
+    <meta property="og:title" content="Jasa Driver Profesional Pati - Siap 24 Jam">
+    <meta property="og:description" content="Layanan supir panggilan aman dan nyaman di area Pati. Cek jadwal ketersediaan supir langsung di website kami!">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=1000&auto=format&fit=crop">
+    <meta property="og:type" content="website">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;600&display=swap');
+        body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+        .hero-bg {
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=1350&auto=format&fit=crop');
+            background-size: cover; background-position: center;
+        }
+        .calendar-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
+        .date-cell {
+            aspect-ratio: 1/1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+            border-radius: 12px; font-size: 0.9rem; cursor: pointer; transition: 0.3s; border: 1px solid transparent;
+        }
+        .status-available { background: #f0fdf4; color: #166534; border-color: #bbf7d0; }
+        .status-available:hover { transform: scale(1.05); background: #dcfce7; }
+        .status-full { background: #fef2f2; color: #991b1b; border-color: #fecaca; }
+        .status-full span { font-size: 0.6rem; font-weight: bold; }
+        
+        .floating-wa {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            z-index: 1000;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Tombol WhatsApp Melayang -->
+    <a href="https://wa.me/6282213197349" target="_blank" class="floating-wa bg-green-500 text-white p-4 rounded-full shadow-2xl flex items-center justify-center text-4xl border-4 border-white">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navbar -->
+    <nav class="bg-white/95 backdrop-blur-md shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-blue-700 p-2 rounded-xl text-white shadow-lg shadow-blue-200">
+                    <i class="fas fa-car-side text-xl"></i>
+                </div>
+                <span class="text-xl font-bold text-blue-900 tracking-tight uppercase">DRIVER PATI</span>
+            </div>
+            <div class="hidden lg:flex space-x-8 font-semibold text-slate-600 uppercase text-xs tracking-widest">
+                <a href="#home" class="hover:text-blue-700 transition">Beranda</a>
+                <a href="#harga" class="hover:text-blue-700 transition">Harga</a>
+                <a href="#testimoni" class="hover:text-blue-700 transition">Testimoni</a>
+                <a href="#jadwal" class="hover:text-blue-700 transition text-blue-600">Jadwal</a>
+            </div>
+            <a href="#booking" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-lg transition duration-300 hidden sm:block">
+                BOOKING SEKARANG
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-bg h-[75vh] flex items-center text-white px-6 text-center md:text-left">
+        <div class="container mx-auto">
+            <div class="max-w-2xl">
+                <span class="bg-yellow-400 text-blue-900 px-4 py-1 rounded-full font-bold text-xs uppercase mb-6 inline-block tracking-widest shadow-lg">Tim Supir Profesional Pati</span>
+                <h1 class="text-4xl md:text-7xl font-bold mb-6 leading-tight">Supir Panggilan Pati 24 Jam</h1>
+                <p class="text-lg md:text-xl text-slate-200 mb-8 leading-relaxed">Layanan supir terpercaya di area Pati untuk perjalanan dalam kota, luar kota, antar jemput bandara, hingga wisata. Keamanan Anda prioritas kami.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#jadwal" class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-2xl font-bold text-lg transition shadow-xl text-center">Cek Ketersediaan</a>
+                    <a href="#harga" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white px-10 py-4 rounded-2xl font-bold text-lg transition text-center text-sm md:text-lg">Daftar Harga</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Daftar Harga -->
+    <section id="harga" class="py-24 bg-white px-6 text-center md:text-left">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 uppercase tracking-tight">Daftar Harga Layanan</h2>
+                <div class="w-20 h-1.5 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
+                <p class="text-slate-500 mt-4 max-w-xl mx-auto italic">"Harga transparan, kompetitif, dan siap membantu perjalanan Anda."</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Paket 1 -->
+                <div class="bg-slate-50 rounded-[2.5rem] p-8 border border-slate-200 hover:border-blue-400 hover:bg-white hover:shadow-2xl transition duration-500 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 bg-blue-600 text-white px-6 py-2 rounded-bl-2xl font-bold text-xs uppercase">Terjangkau</div>
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2 uppercase">Jasa Driver Saja</h3>
+                        <p class="text-slate-500 text-xs italic">Hanya jasa supir (mobil dari Anda)</p>
+                    </div>
+                    <div class="mb-8">
+                        <span class="text-4xl font-bold text-slate-900">Rp 100rb</span>
+                        <span class="text-slate-500 text-sm">/ 12 Jam</span>
+                    </div>
+                    <ul class="space-y-4 mb-10 text-sm text-slate-600">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i> Wilayah Pati Kota</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i> Luar Kota (Nego Rute)</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i> Manual / Matic OK</li>
+                    </ul>
+                    <a href="#booking" class="block w-full text-center py-4 bg-blue-600 text-white rounded-xl font-bold group-hover:bg-blue-700 transition text-sm">Pesan Paket Jasa</a>
+                </div>
+
+                <!-- Paket 2 -->
+                <div class="bg-white rounded-[2.5rem] p-8 border-2 border-blue-600 shadow-xl hover:shadow-2xl transition duration-500 relative">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-400 text-blue-900 px-6 py-2 rounded-full font-bold text-xs uppercase shadow-md whitespace-nowrap">Paling Rekomendasi</div>
+                    <div class="mb-8 pt-4">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2 uppercase">Driver + Mobil</h3>
+                        <p class="text-slate-500 text-xs italic">Unit: Avanza / Xenia / Setara</p>
+                    </div>
+                    <div class="mb-8">
+                        <span class="text-4xl font-bold text-slate-900">Rp 500rb</span>
+                        <span class="text-slate-500 text-sm">/ 12 Jam</span>
+                    </div>
+                    <ul class="space-y-4 mb-10 text-sm text-slate-600">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i> Unit Bersih & Terawat</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i> Kapasitas Hingga 6 Orang</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i> Supir Ramah & Wangi</li>
+                    </ul>
+                    <a href="#booking" class="block w-full text-center py-4 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-200 text-sm">Pesan Paket Lengkap</a>
+                </div>
+
+                <!-- Paket 3 -->
+                <div class="bg-slate-50 rounded-[2.5rem] p-8 border border-slate-200 hover:border-blue-400 hover:bg-white hover:shadow-2xl transition duration-500 group">
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2 uppercase">Paket All-In</h3>
+                        <p class="text-slate-500 text-xs italic">Terima beres untuk perjalanan Anda</p>
+                    </div>
+                    <div class="mb-8">
+                        <span class="text-2xl font-bold text-slate-900 uppercase">Hubungi Kami</span>
+                    </div>
+                    <ul class="space-y-4 mb-10 text-sm text-slate-600">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i> Sudah Termasuk BBM & Tol</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i> Sudah Termasuk Makan Driver</li>
+                        <li class="flex items-center"><i class="fas fa-star text-blue-600 mr-3"></i> Ideal untuk Wisata/Dinas</li>
+                    </ul>
+                    <a href="https://wa.me/6282213197349" target="_blank" class="block w-full text-center py-4 bg-slate-800 text-white rounded-xl font-bold group-hover:bg-slate-900 transition text-sm uppercase">Minta Penawaran</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni Tim Supir -->
+    <section id="testimoni" class="py-24 bg-blue-900 text-white px-6">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold uppercase tracking-tight">Apa Kata Pelanggan?</h2>
+                <div class="w-20 h-1.5 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20">
+                    <div class="flex text-yellow-400 mb-4 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-xs md:text-sm italic mb-6 leading-relaxed">"Tim Driver Pati jempolan! Mas Hilmi profesional sekali, rute sangat paham. Sangat puas."</p>
+                    <div class="font-bold text-yellow-400 text-sm">- Ibu Siti, Pati</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20">
+                    <div class="flex text-yellow-400 mb-4 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-xs md:text-sm italic mb-6 leading-relaxed">"Pesan supir mendadak lewat Mas Farhan & Biyan, langsung jalan. Driver sabar dan nyaman bawa mobilnya."</p>
+                    <div class="font-bold text-yellow-400 text-sm">- Pak Andi, Kudus</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20">
+                    <div class="flex text-yellow-400 mb-4 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-xs md:text-sm italic mb-6 leading-relaxed">"Paket lengkap plus mobil dari Mas Kafa & Yadi bener-bener ramah dan unitnya wangi. Recommended!"</p>
+                    <div class="font-bold text-yellow-400 text-sm">- Mba Lia, Rembang</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-24 bg-white px-6">
+        <div class="container mx-auto max-w-3xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-900 uppercase tracking-tight">Tanya Jawab (FAQ)</h2>
+                <div class="w-20 h-1.5 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
+            </div>
+            <div class="space-y-4 text-left">
+                <details class="bg-slate-50 p-6 rounded-2xl group border border-slate-100 cursor-pointer shadow-sm hover:shadow-md transition">
+                    <summary class="font-bold text-blue-900 list-none flex justify-between items-center text-sm">
+                        Siapa saja tim drivernya?
+                        <i class="fas fa-chevron-down group-open:rotate-180 transition"></i>
+                    </summary>
+                    <p class="mt-4 text-sm text-slate-500 italic">Kami memiliki tim supir berpengalaman di Pati: Hilmi, Kafa, Farhan, Biyan, dan Yadi. Semuanya siap melayani 24 jam dengan profesional.</p>
+                </details>
+                <details class="bg-slate-50 p-6 rounded-2xl group border border-slate-100 cursor-pointer shadow-sm hover:shadow-md transition">
+                    <summary class="font-bold text-blue-900 list-none flex justify-between items-center text-sm">
+                        Apakah driver bisa mobil Matic?
+                        <i class="fas fa-chevron-down group-open:rotate-180 transition"></i>
+                    </summary>
+                    <p class="mt-4 text-sm text-slate-500 italic">Tentu bisa. Tim kami mahir mengendarai berbagai jenis mobil, baik transmisi Manual maupun Matic (Automatic).</p>
+                </details>
+                <details class="bg-slate-50 p-6 rounded-2xl group border border-slate-100 cursor-pointer shadow-sm hover:shadow-md transition">
+                    <summary class="font-bold text-blue-900 list-none flex justify-between items-center text-sm">
+                        Gimana kalau rutenya luar kota?
+                        <i class="fas fa-chevron-down group-open:rotate-180 transition"></i>
+                    </summary>
+                    <p class="mt-4 text-sm text-slate-500 italic">Kami melayani seluruh rute. Untuk luar kota, tarif akan disesuaikan dengan jarak dan waktu tempuh. Hubungi kami untuk harga pastinya.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kalender -->
+    <section id="jadwal" class="py-24 bg-blue-50 px-6">
+        <div class="container mx-auto max-w-4xl text-center md:text-left">
+            <div class="bg-white rounded-[3rem] shadow-2xl overflow-hidden border border-blue-100">
+                <div class="bg-blue-900 p-10 text-white text-center">
+                    <h2 class="text-2xl md:text-3xl font-bold uppercase tracking-widest mb-2">Jadwal Driver Pati</h2>
+                    <p class="text-blue-200 text-sm">Hijau: Tersedia | Merah: Sudah Full</p>
+                </div>
+                <div class="p-8 md:p-14">
+                    <div class="flex justify-between items-center mb-10 text-center md:text-left">
+                        <h3 id="monthDisplay" class="text-2xl font-bold text-blue-900 italic uppercase tracking-wider">Bulan Ini</h3>
+                        <div id="adminBadge" class="hidden bg-red-600 text-white px-4 py-1 rounded-full text-[10px] font-bold tracking-widest animate-pulse uppercase">Mode Edit Aktif</div>
+                    </div>
+                    
+                    <div class="calendar-grid mb-4 text-center text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-widest">
+                        <div>Min</div><div>Sen</div><div>Sel</div><div>Rab</div><div>Kam</div><div>Jum</div><div>Sab</div>
+                    </div>
+                    <div id="calendar" class="calendar-grid">
+                        <!-- Kalender dirender oleh JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulir Booking -->
+    <section id="booking" class="py-24 px-6 bg-white text-center">
+        <div class="container mx-auto max-w-2xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900 uppercase tracking-tight">Pesan Driver Sekarang</h2>
+                <div class="w-20 h-1.5 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
+            </div>
+            <form id="bookingForm" class="space-y-5 text-left bg-slate-50 p-8 rounded-[2rem] shadow-sm border border-slate-100">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold text-slate-700 ml-2">Nama Pemesan</label>
+                        <input type="text" id="nama" class="w-full p-4 rounded-2xl bg-white border border-slate-100 outline-none focus:ring-4 focus:ring-blue-100 transition shadow-sm text-sm" placeholder="Contoh: Budi" required>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold text-slate-700 ml-2">Tanggal Berangkat</label>
+                        <input type="date" id="tanggal" class="w-full p-4 rounded-2xl bg-white border border-slate-100 outline-none focus:ring-4 focus:ring-blue-100 transition shadow-sm text-sm" required>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <label class="text-xs font-bold text-slate-700 ml-2">Rute & Jam Keberangkatan</label>
+                    <textarea id="rute" rows="4" class="w-full p-4 rounded-2xl bg-white border border-slate-100 outline-none focus:ring-4 focus:ring-blue-100 transition shadow-sm text-sm" placeholder="Misal: Dari Pati ke Solo, standby jam 08.00 pagi." required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-5 rounded-2xl shadow-xl transition transform hover:-translate-y-1 flex items-center justify-center text-lg">
+                    <i class="fab fa-whatsapp mr-3 text-2xl"></i> KIRIM KE WHATSAPP
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white pt-24 pb-12 px-6">
+        <div class="container mx-auto text-center">
+            <div class="text-3xl font-bold mb-4 tracking-tighter text-yellow-400">0822-1319-7349</div>
+            <p class="text-slate-400 mb-10 max-w-md mx-auto leading-relaxed text-xs md:text-sm italic font-light">"Keamanan dan kenyamanan Anda adalah komitmen kami di Tim Driver Pati Profesional."</p>
+            
+            <div class="flex justify-center space-x-6 mb-12">
+                <a href="https://wa.me/6282213197349" class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center hover:bg-green-600 transition shadow-lg"><i class="fab fa-whatsapp text-xl"></i></a>
+                <a href="#" class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition shadow-lg"><i class="fab fa-instagram text-xl"></i></a>
+            </div>
+
+            <div class="border-t border-slate-800 pt-10 flex flex-col md:flex-row justify-between items-center text-slate-500 text-[10px] uppercase tracking-widest font-bold">
+                <p>&copy; 2024 Tim Driver Pati. All Rights Reserved.</p>
+                <div id="adminLogin" class="mt-4 md:mt-0 cursor-pointer hover:text-white transition uppercase text-[8px]">Portal Pengelola</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase System -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+        import { getFirestore, doc, setDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
+        import { getAuth, signInAnonymously, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
+
+        const firebaseConfig = JSON.parse(__firebase_config);
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'driver-pati-final';
+
+        let isAdmin = false;
+        let bookedDates = [];
+        const calContainer = document.getElementById('calendar');
+        const monthLabel = document.getElementById('monthDisplay');
+
+        signInAnonymously(auth);
+
+        onAuthStateChanged(auth, (user) => {
+            if (!user) return;
+            onSnapshot(doc(db, 'artifacts', appId, 'public', 'data', 'availability'), (snap) => {
+                bookedDates = snap.exists() ? (snap.data().dates || []) : [];
+                renderCalendar();
+            }, (err) => console.log("Realtime aktif."));
+        });
+
+        function renderCalendar() {
+            const now = new Date();
+            const year = now.getFullYear(); const month = now.getMonth();
+            const names = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
+            
+            monthLabel.innerText = `${names[month]} ${year}`;
+            calContainer.innerHTML = '';
+
+            const firstDay = new Date(year, month, 1).getDay();
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+            for (let i = 0; i < firstDay; i++) calContainer.appendChild(document.createElement('div'));
+
+            for (let d = 1; d <= daysInMonth; d++) {
+                const dateKey = `${year}-${String(month + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+                const isFull = bookedDates.includes(dateKey);
+                
+                const cell = document.createElement('div');
+                cell.className = `date-cell ${isFull ? 'status-full' : 'status-available'} ${isAdmin ? 'ring-2 ring-blue-500' : ''}`;
+                cell.innerHTML = `<strong>${d}</strong>${isFull ? '<span>FULL</span>' : ''}`;
+                
+                cell.onclick = () => {
+                    if (isAdmin) {
+                        toggleDate(dateKey);
+                    } else if (!isFull) {
+                        document.getElementById('tanggal').value = dateKey;
+                        document.getElementById('bookingForm').scrollIntoView();
+                    }
+                };
+                calContainer.appendChild(cell);
+            }
+        }
+
+        async function toggleDate(dateKey) {
+            const newDates = bookedDates.includes(dateKey) 
+                ? bookedDates.filter(d => d !== dateKey) 
+                : [...bookedDates, dateKey];
+            await setDoc(doc(db, 'artifacts', appId, 'public', 'data', 'availability'), { dates: newDates });
+        }
+
+        document.getElementById('adminLogin').onclick = () => {
+            const pass = prompt("Masukkan Password Pengelola:");
+            if (pass === "biyan") {
+                isAdmin = !isAdmin;
+                document.getElementById('adminBadge').classList.toggle('hidden', !isAdmin);
+                renderCalendar();
+            }
+        };
+
+        document.getElementById('bookingForm').onsubmit = (e) => {
+            e.preventDefault();
+            const waMsg = `Halo Jasa Driver Pati, saya ingin booking supir.%0A%0A*Data Pemesan:*%0A- Nama: ${document.getElementById('nama').value}%0A- Tanggal: ${document.getElementById('tanggal').value}%0A- Rute & Jam: ${document.getElementById('rute').value}%0A%0AMohon konfirmasi jadwalnya, terima kasih.`;
+            window.open(`https://wa.me/6282213197349?text=${waMsg}`, '_blank');
+        };
+    </script>
+</body>
+</html>
